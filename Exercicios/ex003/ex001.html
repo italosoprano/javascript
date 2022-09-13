@@ -16,10 +16,16 @@
 <body>
     <h1>iniciando os estudos</h1>
     <p>aqui vai o resultado</p>
-    <div>click em mim.</div>
+    <p>aprendendo a usar o <strong>DOM</strong> javascript</p>
+    <div id="msg">click em mim.</div>
 
     <script>
-        window.document.write('hello world')
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+        d.innerText = 'Estou aguardando...'
+
     </script>
 </body>
 </html>
