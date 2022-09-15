@@ -6,15 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos dom</title>
     <style>
-        div#area {
+        div{
+            font: normal 20pt arial;
             background-color: turquoise;
             color: rgb(221, 39, 69);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area1" onclick="clicar1()">
         interaja... 
     </div>
+    <div id="area2" onmouseenter="entrar1()" onmouseout="saiu1()">
+        interaja... 
+    </div>
+    <script>
+        /*
+        Pode ser feito dessa maneira também:
+
+        a = window.document.getElementById('area1')
+        a = addEventListener('click', clicar)
+        a = addEventListener('onmouseenter', entrar)
+        a = addEventListener('onmouseout', sair)
+        */
+
+        function clicar1() {
+            var a = window.document.getElementById('area1')
+            a.innerText = 'clicou'
+            a.style.backgroundColor = 'red'
+            a.style.color = 'white'
+        }
+
+        function entrar1() {
+            var a = window.document.getElementById('area2')
+            a.innerText = 'entrou'
+            a.style.backgroundColor = 'green'
+            a.style.color = 'brown'
+        }
+
+        function saiu1() {
+            var a = window.document.getElementById('area2')
+            a.innerText = 'saiu'
+            a.style.backgroundColor = 'brown'
+            a.style.color = 'green'
+        }
+
+    </script>
 </body>
 </html>
