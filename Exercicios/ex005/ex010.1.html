@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If and Else 2...</title>
+</head>
+<body>
+    <h1>Vamo descobrir se ele vai pagar o preço normal, ou mais caro!!!</h1>
+    <label for="país">De que país você é?</label>
+    <input type="text" name="país" id="país"> 
+    <input type="button" value="veredito" onclick="checar()">
+    <div id="fim">
+
+    </div>
+
+    <script>
+        function checar() {
+            var lugar = document.getElementById('país')
+            var final = document.getElementById('fim')
+            var cidadania = String(final)
+            if(cidadania == "Brasil"){
+                fim.innerHTML = '<p>Olá fudido</p>'
+            } else {
+                fim.innerHTML = '<p>Vaza ótario!!</p>'
+            }
+
+        }
+    </script>
+</body>
+</html>
