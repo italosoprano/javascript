@@ -1,8 +1,6 @@
 //a função filter chama um novo array filtrando os itens que foram considerados 'true', num teste lógico.
 
-function teste1(value){
-    return value >= 50
-}
+const teste1 = (value) => value >= 50
 
 let a = [10, 65, 45, 78, 97, 43, 68, 76]
 
